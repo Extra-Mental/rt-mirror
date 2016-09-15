@@ -73,7 +73,7 @@ function ENT:RenderMirror(origin, angles, fov)
   local Width = self:OBBMaxs().y
   local Height = self:OBBMaxs().x
 
-  local Pos = self:LocalToWorld(Vector(-Height,Width,Depth))
+  local Pos = self:GetPos()
   local Ang = self:LocalToWorldAngles(Angle(-90,90,0))
 
 
